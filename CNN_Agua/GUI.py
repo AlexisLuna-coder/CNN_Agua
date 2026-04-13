@@ -633,6 +633,7 @@ class CCNAguaApp(tk.Tk):
     def _on_anal_result(self, msg: Message):
         self._progress.stop()
         res: dict  = msg.payload
+        nivel = res["nivel"]
         nivel_mostrar = nivel.replace("_", " ").replace("-", " ")
         color_ui   = res["color_ui"]
         hallazgos  = res["hallazgos"]
@@ -843,7 +844,7 @@ class CCNAguaApp(tk.Tk):
 
     def _tick_clock(self):
         self._lbl_clock.configure(
-            text=datetime.now().strftime("🕐  %H:%M:%S   %d/%m/%Y"))
+            text=datetime.now().strftime("%H:%M:%S   %d/%m/%Y"))
         self.after(1000, self._tick_clock)
 
     def _on_hist_select(self, _event):
