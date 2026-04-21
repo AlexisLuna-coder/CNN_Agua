@@ -30,5 +30,8 @@ CNN_Agua/CNN_Imagenes/
 *.zip
 *.mp4
 
+# PERO permitir el ZIP de código
+!AE1.CD3.I1_EI_8A_LizbethBarreto_CynthiaMartinez_AlexisSanchez_Codigo.zip
+
 # VS Code
 .vscode/
