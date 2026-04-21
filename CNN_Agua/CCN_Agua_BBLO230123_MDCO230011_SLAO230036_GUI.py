@@ -880,7 +880,7 @@ class CCNAguaApp(tk.Tk):
     #---
     #Al finalizar el progrmama, aseguramos cerrar los hilos correctamente para no dejar procesos colgados
     def _on_close(self):
-        #Aseguramos apagar la cámara y los hilos antes de cerrar
+        #Aseguramos apagar la cámara y los hilos antes de cerrar - 
         if self._cam_thread:
             self._cam_thread.stop()
         self._anal_worker.shutdown()

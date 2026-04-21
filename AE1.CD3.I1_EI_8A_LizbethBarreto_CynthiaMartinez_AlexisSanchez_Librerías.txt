@@ -1,0 +1,4 @@
+python -m pip install Pillow 
+import pillow_avif #Importación de Pillow con avif - Detección de imágenes
+
+pip install pyinstaller

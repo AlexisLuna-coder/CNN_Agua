@@ -18,3 +18,17 @@ __pycache__/
 *.h5
 *.weights.h5
 *.hdf5
+
+# Carpetas de build
+build/
+dist/
+
+#Carpeta de imágenes - Dataset
+CNN_Agua/CNN_Imagenes/
+
+# Otros pesados
+*.zip
+*.mp4
+
+# VS Code
+.vscode/
